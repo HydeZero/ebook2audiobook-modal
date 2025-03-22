@@ -60,7 +60,7 @@ Now, copy this into command.sh:
 #!/bin/bash
 apt-get update
 apt-get install git -y
-apt-get install sudo curl
+apt-get install sudo curl -y
 git clone https://github.com/HydeZero/ebook2audiobook-modal.git
 cd ebook2audiobook-modal
 chmod +x ebook2audiobook.sh
