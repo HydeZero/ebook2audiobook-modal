@@ -66,3 +66,10 @@ chmod +x ebook2audiobook.sh
 ```
 
 If all goes well, you can exit the directory, run `modal run -m ebook.entrypoint`, and go to the share url that will be displayed.
+
+## Apache Compliance
+To comply with Apache, the changes made are:
+* Allowed pip install to work in modal via the -r flag
+* Removed cache purges from it, as the container will always be fresh and get the version needed.
+
+The original version was made be DrewThomasson, and is avaliable at DrewThomasson/ebook2audiobook. You should be able to access it via the link at the top of the page.
