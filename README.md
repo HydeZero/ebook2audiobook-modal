@@ -6,8 +6,6 @@ using XTTSv2, Bark, Vits, Fairseq, YourTTS and more, designed for deployment on 
 The authors are not responsible for any misuse of this software or any resulting legal consequences. <br>
 Use this tool responsibly and in accordance with all applicable laws.
 
-[![Discord](https://dcbadge.limes.pink/api/server/https://discord.gg/63Tv3F65k6)](https://discord.gg/63Tv3F65k6)
-
 ### Support the original ebook2audiobook developers!
 [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/athomasson2) 
 
