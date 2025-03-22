@@ -13,6 +13,9 @@ Use this tool responsibly and in accordance with all applicable laws.
 
 ## Usage
 
+> [!IMPORTANT]
+This, by default, uses a H100 GPU, which, as of March 22nd, 2025, costs $4 an hour. Modal provides $30 free monthly as of the same date. So, assuming it uses 8 GiB of RAM and 1 CPU core, you should expect a runtime of 7 hours. Please make sure you have enough compute avaliable before running this.
+
 ### Requirements:
 * `modal` installed and set up.
 * A stable internet connection to maintain connection to the container.
@@ -35,7 +38,7 @@ import modal
 
 app = modal.App("ebook2audiobook")
 
-@app.function(gpu="H100", timeout=86400)
+@app.function(gpu="H100", timeout=86400) # feel free to change the gpu
 def run():
     import time
     from subprocess import Popen, PIPE
