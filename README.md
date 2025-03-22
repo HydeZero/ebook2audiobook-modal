@@ -62,7 +62,7 @@ apt-get update
 apt-get install git -y
 apt-get install sudo curl
 git clone https://github.com/HydeZero/ebook2audiobook-modal.git
-cd ebook2audiobook
+cd ebook2audiobook-modal
 chmod +x ebook2audiobook.sh
 ./ebook2audiobook.sh --share
 ```
