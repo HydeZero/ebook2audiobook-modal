@@ -96,7 +96,7 @@ def check_and_install_requirements(file_path):
 def check_dictionary():
     import unidic
     unidic_path = unidic.DICDIR
-    dicrc = '/root/ebook/ebook2audiobook-modal/python_env/lib/python3.12/site-packages/unidic/dicdir/dicrc
+    dicrc = '/root/ebook/ebook2audiobook-modal/python_env/lib/python3.12/site-packages/unidic/dicdir/dicrc'
     if not os.path.exists(dicrc) or os.path.getsize(dicrc) == 0:
         try:
             error = 'UniDic dictionary not found or incomplete. Downloading now...'
