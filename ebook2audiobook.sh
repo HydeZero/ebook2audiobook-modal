@@ -297,7 +297,7 @@ else
 			source $CONDA_ENV
 			conda activate "$SCRIPT_DIR/$PYTHON_ENV"
 			python -m pip install --upgrade pip
-			python -m pip install --upgrade --no-cache-dir --progress-bar=on < requirements.txt
+			python -m pip install --upgrade --no-cache-dir --progress-bar=on -r requirements.txt
 			conda deactivate
 		fi
 		return 0
