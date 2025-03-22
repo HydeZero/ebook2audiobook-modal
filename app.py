@@ -54,7 +54,7 @@ def check_and_install_requirements(file_path):
             import regex as re
             from tqdm import tqdm
         except Exception as e:
-            subprocess.check_call([sys.executable, '-m', 'pip', 'cache', 'purge'])
+            # subprocess.check_call([sys.executable, '-m', 'pip', 'cache', 'purge']) Cache is disabled regularly, so this will harm it.
             subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--no-cache-dir', 'regex', 'tqdm'])
             import regex as re 
             from tqdm import tqdm
@@ -101,7 +101,7 @@ def check_dictionary():
         try:
             error = 'UniDic dictionary not found or incomplete. Downloading now...'
             print(error)
-            subprocess.run(['python', '-m', 'pip', 'cache', 'purge'], check=True)
+            # subprocess.run(['python', '-m', 'pip', 'cache', 'purge'], check=True) No cache to purge.
             subprocess.run(['python', '-m', 'unidic', 'download'], check=True)
         except subprocess.CalledProcessError as e:
             error = f'Failed to download UniDic dictionary. Error: {e}. Unable to continue without UniDic. Exiting...'
