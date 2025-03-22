@@ -97,16 +97,16 @@ def check_dictionary():
     import unidic
     unidic_path = unidic.DICDIR
     dicrc = '/root/ebook/ebook2audiobook-modal/python_env/lib/python3.12/site-packages/unidic/dicdir/dicrc'
-    if not os.path.exists(dicrc) or os.path.getsize(dicrc) == 0:
-        try:
-            error = 'UniDic dictionary not found or incomplete. Downloading now...'
-            print(error)
-            # subprocess.run(['python', '-m', 'pip', 'cache', 'purge'], check=True) No cache to purge.
-            subprocess.run(['python', '-m', 'unidic', 'download'], check=True)
-        except subprocess.CalledProcessError as e:
-            error = f'Failed to download UniDic dictionary. Error: {e}. Unable to continue without UniDic. Exiting...'
-            raise SystemExit(error)
-            return False
+    #if not os.path.exists(dicrc) or os.path.getsize(dicrc) == 0:
+    #    try:
+    #        error = 'UniDic dictionary not found or incomplete. Downloading now...'
+    #        print(error)
+    #        # subprocess.run(['python', '-m', 'pip', 'cache', 'purge'], check=True) No cache to purge.
+    #        subprocess.run(['python', '-m', 'unidic', 'download'], check=True)
+    #except subprocess.CalledProcessError as e:
+    #        error = f'Failed to download UniDic dictionary. Error: {e}. Unable to continue without UniDic. Exiting...'
+    #        raise SystemExit(error)
+    #        return False
     return True
 
 def is_port_in_use(port):
